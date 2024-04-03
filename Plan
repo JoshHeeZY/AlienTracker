@@ -1,0 +1,31 @@
+Plan:
+Ultrasonic Sensor (HC-SR04):
+
+VCC pin to 5V on the Arduino Mega.
+GND pin to GND on the Arduino Mega.
+TRIG pin to digital pin 30 on the Arduino Mega.
+ECHO pin to digital pin 32 on the Arduino Mega.
+
+
+PIR Sensors:
+
+Each PIR sensor will have a VCC, GND, and OUT pin.
+Connect the VCC pins of all PIR sensors to 5V on the Arduino Mega.
+Connect the GND pins of all PIR sensors to GND on the Arduino Mega.
+Connect the OUT pin of one PIR sensor to digital pin 43 on the Arduino Mega.
+Connect the OUT pin of the second PIR sensor to digital pin 45 on the Arduino Mega.
+Connect the OUT pin of the third PIR sensor to digital pin 47 on the Arduino Mega.
+
+
+Buzzer:
+
+Connect the positive (longer leg) of the buzzer to digital pin 34 on the Arduino Mega.
+Connect the negative (shorter leg) of the buzzer to GND on the Arduino Mega.
+TFT Display (Looks like ILI9341):
+
+VCC pin to 5V on the Arduino Mega.
+GND pin to GND on the Arduino Mega.
+CS (Chip Select) to a digital pin defined in your code for the display (you need to check your code for the exact pin).
+RESET to a digital pin defined in your code for the display (check your code).
+D/C (Data/Command) to a digital pin defined in your code (check your code).
+SDI (MOSI), SCK, LED, SDO (MISO) to the respective SPI pins on the Arduino Mega. The SPI pins are typically 50 (MISO), 51 (MOSI), 52 (SCK), and 53 (SS) on the Mega, but you need to verify with your code or display's documentation.
